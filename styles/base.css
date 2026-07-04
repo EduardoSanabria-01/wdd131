@@ -19,19 +19,22 @@ header {
     background-color: #1e557c;
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 0 0;
 }
 
 #course-title {
     display: block;
     font-size: 1.8rem;
     font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 nav {
     display: flex;
     background-color: #333;
     justify-content: center;
+    width: 100%;
 }
 
 nav a {
