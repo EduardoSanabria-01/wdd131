@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e557c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem 2.5rem;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #ffeb3b;
+}
+
+main {
+    max-width: 1280px;
+    width: 95%;
+    margin: 2rem auto;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    background-color: #1e557c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.bio-grid, .geo-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: start;
+}
+
+.geo-grid {
+    grid-template-columns: auto 1fr;
+    margin-top: 1rem;
+}
+
+.profile-img {
+    width: 180px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+}
+
+.flag-img {
+    width: 220px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 0 1.5rem;
+}
+
+.sub-heading {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.card ul li {
+    margin-bottom: 0.75rem;
+}
+
+.card ul li a {
+    color: #0026ff;
+    text-decoration: underline;
+}
+
+.card ul li a:hover {
+    color: #ff5722;
+}
+
+footer {
+    background-color: #1e557c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+#lastModified {
+    color: #fffde7;
+    margin-top: 0.5rem;
+}
