@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album - WDD 131</title>
+  <meta name="description" content="Responsive temple album project for WDD 131.">
+  <meta name="author" content="Victor Eduardo Sanabria Diaz">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+<body>
+
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Toggle Menu"></button>
+    <nav class="navigation">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Temple Collection</h2>
+    <div class="grid-container">
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Manti Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Nauvoo Illinois Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Provo Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>Frankfurt Germany Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Temple Placeholder" loading="lazy">
+        <figcaption>London England Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Victor Eduardo Sanabria Diaz | Italy</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/temples.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background-color: #1a365d;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+/* Hamburguer button style using pseudo-elements */
+#menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.show::before {
+  content: "❌";
+}
+
+/* Navigation - Flex layout hidden by default on mobile */
+.navigation {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.navigation.show {
+  display: flex;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover, .navigation a.active {
+  background-color: #2b6cb0;
+  font-weight: bold;
+}
+
+/* Main Content Layout */
+main {
+  max-width: 95%;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+main h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+/* Mobile-first: 1 Column Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: #edf2f7;
+}
+
+/* Footer layout */
+footer {
+  background-color: #1a365d;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 4px solid #2b6cb0;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

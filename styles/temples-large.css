@@ -1,0 +1,42 @@
+@media only screen and (min-width: 48rem) {
+  
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  /* Hide burger menu button on desktop */
+  #menu {
+    display: none;
+  }
+
+  /* Display navigation horizontally */
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+    gap: 0.5rem;
+  }
+
+  .navigation a {
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    max-width: 1024px;
+    padding: 2rem;
+  }
+
+  /* Responsive Multi-column Grid using auto-fit and minmax */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
