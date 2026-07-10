@@ -41,13 +41,16 @@ h1 {
   content: "❌";
 }
 
-/* Navigation - Flex layout hidden by default on mobile */
-.navigation {
-  display: none;
+nav {
+  display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
   margin-top: 1rem;
+}
+
+.navigation {
+  display: none;
 }
 
 .navigation.show {
