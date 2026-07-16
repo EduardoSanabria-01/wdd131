@@ -1,0 +1,51 @@
+/* --- Document Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Responsive Hero Image Container --- */
+.hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 
+  Ensures the image behaves responsively while maintaining its 
+  natural 2:1 aspect ratio configured in the HTML width/height attributes
+*/
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Fallback insurance to avoid squishing if container proportions drift */
+    aspect-ratio: 2 / 1; /* Instructs modern browsers to hold a strict 2:1 block space */
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+}
