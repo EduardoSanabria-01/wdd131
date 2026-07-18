@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru - W03 Assignment</title>
+    <meta name="description" content="An informational page about Peru for the W03 assignment in WDD131.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp" alt="Scenic view of Peru landscape" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="info-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Capital:</strong> Lima</li>
+                <li><strong>Population:</strong> 34 Million</li>
+                <li><strong>Language:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Sol (PEN)</li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2 class="weather-heading">Weather</h2>
+            <svg class="weather-icon-mobile" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368">
+                <path d="M80-200v-80h800v80H80Zm160-200q-50 0-85-35t-35-85q0-50 35-85t85-35q10 0 20 2.5t20 6.5q24-60 80.5-98T446-680q78 0 134 50t65 126q25 5 44.5 19.5T716-448q35 15 54.5 47t19.5 71q0 50-35 85t-85 35H240Z"/>
+            </svg>
+            
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">8</span>°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">7</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="chill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Victor Eduardo Sanabria Diaz | Ica, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
