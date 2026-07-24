@@ -3,6 +3,10 @@
         display: none;
     }
 
+    nav {
+        width: auto;
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
